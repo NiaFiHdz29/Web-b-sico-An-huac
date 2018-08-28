@@ -1,0 +1,52 @@
+
+body, html {
+    margin:0;
+    height:100%;
+    background-color: #FFF1C2;
+}
+    html{
+        box-sizing: border-box;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p {font-family: 'PT Sans Narrow', sans-serif;}
+
+h2{font-family: 'Anton', sans-serif;}
+
+.parrafo{
+    color: aquamarine
+}
+
+#container{
+    display: grid;
+    grid-template-columns:repeat(8, 300px);
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 5px;
+    grid-template-areas:
+    "bob bob bob bob bob bob bob bob"
+    ". . . s1 s1 s1 . ."
+    ". . . s1 s1 s1 . ."
+    "s2 s2 s2 s2 s2 s2 s2 s2"
+    "s2 s2 s2 s2 s2 s2 s2 s2"
+    "pie pie pie pie pie pie pie pie"
+}
+header{
+    background-color: blueviolet;
+    grid-area: bob;
+}
+#sec1{
+    background-color: coral;
+    grid-area: s1;
+}
+#sec2{
+    background-color: chocolate;
+        grid-area: s2;
+}
+footer{
+    background-color: blue;
+
+    grid-area: pie;
+}
