@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css shapes</title>
+    <style>
+    #conteiner{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1rem;
+ }
+    #imagen1 {
+        float: left;
+        shape-outside: circle(50%)
+    }
+
+     #imagen2 {
+        float: left;
+        shape-outside:url(images/stic.png);
+    }
+
+    #imagen3 {
+        float: right;
+        shape-outside:polygon(11% 80%, 90.4% -0.44%);
+    }
+    </style>
+</head>
+<body>
+   <div id="conteiner">
+       <nav>
+           <ul>
+               <li><a href="index.html">inicio</a></li>
+           </ul>
+       </nav>
+       <section>
+           <h1>shapes1</h1>
+           <img src="images/pajaros1.jpg" alt="pajaro" width="400" id="imagen1">
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit, et culpa enim delectus deserunt illo perferendis magnam mollitia ab voluptates nisi accusantium impedit officiis, debitis ratione, adipisci omnis quibusdam!</p>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio illo, asperiores in enim cum debitis! Libero doloremque velit at aliquam necessitatibus aperiam, ipsam iusto. Illo non dolorum voluptas repellat.</p>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa eius cupiditate molestiae sunt veniam fugiat odit fugit culpa in minima nisi minus error itaque beatae animi, accusamus velit enim.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod ab nostrum facere adipisci eos incidunt ipsum cumque natus minima, itaque, quos accusamus. Placeat dignissimos natus incidunt assumenda iure nesciunt?</p>
+       </section>
+
+       <section>
+           <h1>Shapes2</h1>
+           <img src="images/stic.png" alt="unpng" width="400" id="imagen2">
+
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, necessitatibus porro cumque quas, culpa laborum expedita molestiae cupiditate nam ullam molestias sint voluptas omnis nobis ea reiciendis voluptatibus consequuntur quos.</p>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit totam inventore ullam sit maiores deleniti reiciendis reprehenderit aliquam, quibusdam blanditiis fugiat, atque quae enim voluptatem perferendis odio fuga harum veniam?</p>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem numquam tenetur illum ratione veniam libero cupiditate sequi eos totam. Repellendus ducimus excepturi quos obcaecati delectus vel iusto dolorem unde.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea eligendi? In quaerat, error saepe excepturi iusto quos aspernatur, reprehenderit cum tempora velit aliquid iure, porro nulla autem fuga nobis?</p>
+       </section>
+
+       <section>
+           <h1>Shapes3</h1>
+           <img src="images/prev.png" alt="pajaro" width="500" id="imagen3"> 
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, necessitatibus porro cumque quas, culpa laborum expedita molestiae cupiditate nam ullam molestias sint voluptas omnis nobis ea reiciendis voluptatibus consequuntur quos.</p>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit totam inventore ullam sit maiores deleniti reiciendis reprehenderit aliquam, quibusdam blanditiis fugiat, atque quae enim voluptatem perferendis odio fuga harum veniam?</p>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem numquam tenetur illum ratione veniam libero cupiditate sequi eos totam. Repellendus ducimus excepturi quos obcaecati delectus vel iusto dolorem unde.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea eligendi? In quaerat, error saepe excepturi iusto quos aspernatur, reprehenderit cum tempora velit aliquid iure, porro nulla autem fuga nobis?</p>
+       </section>
+       </section>
+   </div> 
+</body>
+</html>
