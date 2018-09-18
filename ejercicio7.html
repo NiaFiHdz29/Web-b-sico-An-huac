@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7, flexbox </title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body{
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        
+        p{
+            padding: 1em;
+        }
+        #container{
+            display: flex;
+            flex-wrap:wrap;
+            width: 600px;
+            height: 600px;
+            background-color: black;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            
+        }
+        .caja{
+            width: auto;
+            height: 100px;
+        }
+        .box1{
+            background-color: rgb(12, 233, 185);
+            height: 120px;
+        }
+        .box2{
+            background-color: rgb(233, 12, 67);
+            height: 150px;
+    }
+        .box3{
+            background-color: rgb(12, 64, 233);
+            height: 170px
+            ;
+    }
+        .box4{
+            background-color: rgb(176, 221, 11);
+            height: 190px;
+    }
+        .box5{
+            background-color: rgb(233, 112, 12);
+            height: 210px;
+        }
+
+
+        #container2{
+            display: flex;
+            flex-wrap:wrap;
+            width: 100wv;
+            height: 600px;
+            background-color:gray;
+
+            display: flex;
+            flex-wrap: wrap;
+            /*align-content:flex-end;*/
+        }
+
+        .caja-a{
+            flex-grow: 1;
+
+        }
+
+        .box6{
+            background-color: rgb(12, 233, 185);
+            /*height: 120px;*/
+        }
+        .box7{
+            background-color: rgb(233, 12, 67);
+            /*height: 150px;*/
+    }
+        .box8{
+            background-color: rgb(12, 64, 233);
+            /*height: 170px*/
+            ;
+    }
+        .box9{
+            background-color: rgb(176, 221, 11);
+            /*height: 190px;*/
+    }
+        .box10{
+            background-color: rgb(233, 112, 12);
+            /*height: 210px;*/
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section class="box1 caja"><p>caja1</p></section>
+        <section class="box2 caja"><p>caja2</p></section>
+        <section class="box3 caja"><p>caja3</p></section>
+        <section class="box4 caja"><p>caja4</p></section>
+        <section class="box5 caja"><p>caja5</p></section>
+
+    </div>
+    <div id="container2">
+            <section class="box6 caja-a"><p>caja6</p></section>
+            <section class="box7 caja-a"><p>caja7 mas texto</p></section>
+            <section class="box8 caja-a"><p>caja8 mas texto para prueba</p></section>
+            <section class="box9 caja-a"><p>caja9 mas texto para prueba de las cajas</p></section>
+            <section class="box10 caja-a"><p>caja10 para prueba</p></section>
+    
+        </div>
+    
+</body>
+</html>
